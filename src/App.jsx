@@ -86,7 +86,7 @@ const App = () => {
 
         {trendingMovies.length > 0 && (
           <section className='trending'>
-            <h2 className='mt-7'>Trending Movies</h2>
+            <h2>Trending Movies</h2>
             <ul>
               {trendingMovies.map((movie, index) => {
                 return <li key={movie.$id}>
@@ -98,7 +98,7 @@ const App = () => {
           </section>
         )}
         <section className="all-movies">
-          <h2 className='mt-7'>Popular</h2>
+          <h2>Popular</h2>
           {isLoading ? (
             <Spinner />
           ) : errorMessage ? (
